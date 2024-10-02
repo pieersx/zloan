@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Zloan</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+    <body>
+        <div class="form">
+            <fieldset>
+                <h1>Simulador de Préstamos Personales</h1>
+                <form>
+                    <div>
+                        <label for="capital">Monto del préstamo</label>
+                        <input type="number" placeholder="¿Cuánto desea solicitar?" id="capital" min="100" required>
+                    </div>
+                    <div>
+                        <label for="cuota">Plazo del préstamo (meses)</label>
+                        <input type="number" placeholder="¿Por cuánto tiempo? (Meses)" id="cuota" min="1" required>
+                    </div>
+                    <div>
+                        <label for="ineteres">Tasa de efectiva anual (%)</label>
+                        <input type="number" placeholder="¿A qué tasa (%)?" id="intereses" min="4" step="1" required>
+                    </div>
+                </form>
+                <button onclick="generatorLoan();">Calcular</button>
+            </fieldset>
+
+            <hr>
+
+            <table class="tab">
+                <thead>
+                    <tr>
+                        <td>MES</td>
+                        <td>CUOTA</td>
+                        <td>INTERÉS</td>
+                        <td>AMORTIZACIÓN</td>
+                        <td>Saldo</td>
+                    </tr>
+                </thead>
+                <tbody id="tab">
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="ft"></td>
+                        <td id="t1"></td>
+                        <td id="t2"></td>
+                        <td id="t3"></td>
+                        <td id="t4"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
