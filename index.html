@@ -24,6 +24,10 @@
                         <label for="ineteres">Tasa de efectiva anual (%)</label>
                         <input type="number" placeholder="¿A qué tasa (%)?" id="intereses" min="4" step="1" required>
                     </div>
+                    <div>
+                        <label for="comision">Comisión mensual</label>
+                        <input type="number" id="comision" placeholder="Comisión mensual" />
+                    </div>
                 </form>
                 <button onclick="generatorLoan();">Calcular</button>
             </fieldset>
@@ -37,7 +41,8 @@
                         <td>CUOTA</td>
                         <td>INTERÉS</td>
                         <td>AMORTIZACIÓN</td>
-                        <td>Saldo</td>
+                        <td>SALDO</td>
+                        <td>COMISION</td>
                     </tr>
                 </thead>
                 <tbody id="tab">
@@ -49,6 +54,7 @@
                         <td id="t2"></td>
                         <td id="t3"></td>
                         <td id="t4"></td>
+                        <td id="t5"></td>
                     </tr>
                 </tfoot>
             </table>
