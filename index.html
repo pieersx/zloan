@@ -21,7 +21,14 @@
                         <input type="number" placeholder="¿Por cuánto tiempo? (Meses)" id="cuota" min="1" required>
                     </div>
                     <div>
-                        <label for="ineteres">Tasa de efectiva anual (%)</label>
+                        <label for="tipo-tasa">Tipo de tasa</label>
+                        <select id="tipoTasa">
+                            <option value="TEM">Tasa de Efectiva Mensual (TEM)</option>
+                            <option value="TEA">Tasa de Efectiva Anual (TEA)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="interes">Valor de la tasa (%)</label>
                         <input type="number" placeholder="¿A qué tasa (%)?" id="intereses" min="4" step="1" required>
                     </div>
                     <div>
@@ -39,7 +46,7 @@
                     <tr>
                         <td>MES</td>
                         <td>CUOTA</td>
-                        <td>INTERÉS</td>
+                        <td>INTERESES</td>
                         <td>AMORTIZACIÓN</td>
                         <td>SALDO</td>
                         <td>COMISION</td>

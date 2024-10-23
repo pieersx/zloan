@@ -1,0 +1,61 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+
+\title{Fórmulas de Análisis de Créditos}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Cuota}
+
+\begin{center}
+    \textbf{Cuota} = \textbf{Interés} + \textbf{Amortización}
+\end{center}
+
+La fórmula para calcular la renta (cuota) de un préstamo es la siguiente:
+
+\begin{equation}
+    R = P \bigg[ \dfrac{(1 + i)^{n} \cdot i}{(1 + i)^{n} - 1}\bigg]
+\end{equation}
+
+Donde:
+\begin{itemize}[label={--}]
+    \item \textbf{P}: Valor o cantidad de dinero en el momento denominado "presente" o "tiempo cero".
+    \item \textbf{R}: Renta o cuota a pagar.
+    \item \textbf{i}: Tasa de interés efectiva por periodo de interés (interés compuesto).
+    \item \textbf{n}: Número de periodos de capitalización.
+\end{itemize}
+
+\section{Interés}
+
+\begin{center}
+    \textbf{Intereses} += \textbf{Saldo} $\cdot$ \textbf{Interés}
+\end{center}
+
+\begin{equation}
+    TEM = (1 + TEA)^{\frac{1}{12}} - 1
+\end{equation}
+
+Donde:
+\begin{itemize}[label={--}]
+    \item  \textbf{TEM}: Tasa de efectiva mensual.
+    \item  \textbf{TEA}: Tasa de efectiva anual.
+    \item \textbf{I}: Interés generado.
+    \item \textbf{S}: Saldo o monto del capital en el periodo.
+    \item \textbf{i}: Tasa de interés por periodo (en decimal).
+\end{itemize}
+
+\section{Amortización}
+
+\begin{center}
+    \textbf{Amortización} = \textbf{Cuota} - \textbf{Intereses}
+\end{center}
+
+
+\end{document}
